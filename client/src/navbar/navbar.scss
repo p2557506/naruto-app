@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: ivory;
+
+    .logo{
+        padding: 1rem;
+    }
+    
+    .links{
+        display: flex;
+        list-style: none;
+        padding: 1rem;
+        gap: 1rem;
+        li{
+            
+        }
+    }
+}
