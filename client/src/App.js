@@ -3,8 +3,11 @@ import {BrowserRouter,Routes,Route} from "react-router-dom"
 
 
 //Page Imports
-import Home from './home/Home';
-import CharacterDex from './characterDex/CharacterDex';
+
+import CharacterDex from './pages/characterDex/CharacterDex';
+import Home from './pages/home/Home';
+import Akatsuki from './pages/akatsukiPage/Akatsuki';
+
 
 function App() {
   return (
@@ -13,6 +16,8 @@ function App() {
           <Routes>
             <Route path="/" element = {<Home/>}/>
             <Route path="/characterDex" element = {<CharacterDex/>}/>
+            <Route path="/akatsuki" element = {<Akatsuki/>}/>
+            
           </Routes>
         </BrowserRouter>
     </div>

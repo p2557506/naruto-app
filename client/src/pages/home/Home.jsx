@@ -1,8 +1,9 @@
 import React from 'react'
 import "./home.scss"
+import Navbar from '../../navbar/Navbar'
 
 //Component Imports
-import Navbar from '../navbar/Navbar'
+
 
 const Home = () => {
   return (

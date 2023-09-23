@@ -1,25 +1,35 @@
 import React from 'react'
-import Navbar from '../navbar/Navbar'
+
 import { useEffect,useState } from 'react'
 import axios from 'axios'
+import Navbar from '../../navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 //Axios to allow api request using react app
 
 const CharacterDex = () => {
 
-  const [characters,setCharacters] = useState([]);
+  const [characters,setCharacters] = useState();
+
+
+  
 
   useEffect(() =>{
-    const fetchAllCharacters = async ()=>{
+    const fetchAllCharacters = async () =>{
       try {
-        const res = await axios.get("https://narutodb.xyz/api/character");
-        console.log(res);
+        const response = await axios.get("https://dattebayo-api.onrender.com/characters");
+        
+        console.log(response);
       } catch (error) {
-        console.log(error)
+        console.error(error);
       }
     }
     fetchAllCharacters();
   },[])
+
+  
+  
+  
 
   return (
     <div className="characterDexContainer">
@@ -32,9 +42,14 @@ const CharacterDex = () => {
       <div className="characterDexDescription">
         <p>Search and look through all characters in the naruto universe!</p>
       </div>
-      <div className="charactersContainer">
-        <div className="characterBox"></div>
-      </div>
+      <ul className="characterGroupContainer">
+        <Link to={"/akatsuki"}><li>Akatsuki</li></Link>
+        
+        <li>Tailed Beasts</li>
+        <li>Team 7</li>
+        <li>Kage</li>
+        
+      </ul>
     </div>
   )
 }
