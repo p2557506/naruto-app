@@ -44,8 +44,8 @@ const CharacterDex = () => {
       </div>
       <ul className="characterGroupContainer">
         <Link to={"/akatsuki"}><li>Akatsuki</li></Link>
+        <Link to ={"/tailedBeasts"}><li>Tailed Beasts</li></Link>
         
-        <li>Tailed Beasts</li>
         <li>Team 7</li>
         <li>Kage</li>
         

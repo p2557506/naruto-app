@@ -9,8 +9,9 @@ const Navbar = () => {
         <ul className="links">
             <li>Home</li>
             <li>Watching Guide</li>
-            <li><Link to={"/characterDex"} >CharacterDex</Link></li>
-            <li>Villages</li>
+            <li><Link to={"/characterDex"}>CharacterDex</Link></li>
+            <li><Link to={"/villages"}>Villages</Link></li>
+            
             <li>Kekkei Genkai</li>
             <li>Quiz</li>
         </ul>

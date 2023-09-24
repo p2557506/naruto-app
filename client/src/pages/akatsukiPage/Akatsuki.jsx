@@ -12,7 +12,7 @@ const Akatsuki = () => {
         const fetchAllAkatsuki = async () =>{
         try {
             const res = await axios.get("https://dattebayo-api.onrender.com/akatsuki");
-            setAkatsuki(res.data.akatsuki)
+            setAkatsuki(res.data.akatsuki);
             console.log(res.data.akatsuki);
         } catch (error) {
             console.error(error);
