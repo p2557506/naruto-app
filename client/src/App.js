@@ -9,6 +9,8 @@ import Home from './pages/home/Home';
 import Akatsuki from './pages/akatsukiPage/Akatsuki';
 import TailedBeasts from './pages/tailedBeastsPage/TailedBeasts';
 import Villages from './pages/villages/Villages';
+import DedicatedCharacter from './pages/dedicatedCharacterPages/DedicatedCharacter';
+import CharactersPage from './pages/characterPages/CharactersPage';
 
 
 function App() {
@@ -18,9 +20,13 @@ function App() {
           <Routes>
             <Route path="/" element = {<Home/>}/>
             <Route path="/characterDex" element = {<CharacterDex/>}/>
+            <Route path="/characters" element = {<CharactersPage/>}/>
             <Route path="/villages" element = {<Villages/>}/>
             <Route path="/akatsuki" element = {<Akatsuki/>}/>
             <Route path="/tailedBeasts" element = {<TailedBeasts/>}/>
+
+            {/**Dedicated Character Page */}
+            <Route path="/character/:id" element ={<DedicatedCharacter/>}/>
           </Routes>
         </BrowserRouter>
     </div>

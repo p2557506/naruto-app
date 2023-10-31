@@ -1,0 +1,9 @@
+.charactersWrapper{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    .characterItemBox{
+        display: flex;
+        flex-direction: column;
+    }
+}
