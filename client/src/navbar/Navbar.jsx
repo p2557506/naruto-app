@@ -12,7 +12,7 @@ const Navbar = () => {
             <li><Link to={"/characterDex"}>CharacterDex</Link></li>
             <li><Link to={"/villages"}>Villages</Link></li>
             
-            <li>Kekkei Genkai</li>
+            <li><Link to={"/kekkeiGenkai"}>Kekkei Genkai</Link></li>
             <li>Quiz</li>
         </ul>
     </div>

@@ -1,3 +1,7 @@
+@font-face{
+    font-family: narutoFont;
+    src: url(naruto.ttf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,10 +9,11 @@
 .navbarContainer{
     display: flex;
     justify-content: space-between;
-    background-color: ivory;
+    background-color: #EA9828;
 
     .logo{
         padding: 1rem;
+        font-family: narutoFont;
     }
     
     .links{
@@ -16,6 +21,7 @@
         list-style: none;
         padding: 1rem;
         gap: 1rem;
+        font-family: narutoFont;
         li{
             
         }

@@ -11,6 +11,7 @@ import TailedBeasts from './pages/tailedBeastsPage/TailedBeasts';
 import Villages from './pages/villages/Villages';
 import DedicatedCharacter from './pages/dedicatedCharacterPages/DedicatedCharacter';
 import CharactersPage from './pages/characterPages/CharactersPage';
+import KekkeiGenkai from './pages/kekkeiGenkaiPage/KekkeiGenkai';
 
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
             <Route path="/characters" element = {<CharactersPage/>}/>
             <Route path="/villages" element = {<Villages/>}/>
             <Route path="/akatsuki" element = {<Akatsuki/>}/>
+            <Route path="/kekkeiGenkai" element = {<KekkeiGenkai/>}/>
             <Route path="/tailedBeasts" element = {<TailedBeasts/>}/>
+            
 
             {/**Dedicated Character Page */}
             <Route path="/character/:id" element ={<DedicatedCharacter/>}/>
