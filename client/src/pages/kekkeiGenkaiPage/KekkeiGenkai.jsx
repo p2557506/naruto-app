@@ -107,6 +107,7 @@ const KekkeiGenkai = () => {
                     </div>
             ))}
             <div>
+                
                 Left over kekkei genkai3
             </div>
             

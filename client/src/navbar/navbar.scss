@@ -1,6 +1,7 @@
+@import "../global.scss";
 @font-face{
     font-family: narutoFont;
-    src: url(naruto.ttf);
+    src: url(../naruto.ttf);
 }
 *{
     margin: 0;
@@ -9,7 +10,7 @@
 .navbarContainer{
     display: flex;
     justify-content: space-between;
-    background-color: #EA9828;
+    background-color: $mainColor;
 
     .logo{
         padding: 1rem;

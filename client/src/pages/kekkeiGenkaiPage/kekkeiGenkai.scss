@@ -1,12 +1,51 @@
+@import "../../global.scss";
+@font-face{
+    font-family: narutoFont;
+    src: url(../../naruto.ttf);
+}
 .kekkeiGenkaiWrapper{
     display: flex;
+    justify-content: center;
     
-    gap: 1rem;
-    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
     
     .kekkeiGenkaiItemBox{
-        .kekkeiGenkaiName{
+        margin: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        border-radius: 1rem;
+        border: 1px solid lightgray;
+        position: relative;
 
+        img{
+            border-radius: 1rem;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        .kekkeiGenkaiName{
+            position: absolute;
+            font-family: narutoFont;
+            color: white;
+            z-index: 0;
+            visibility: hidden;
+        }
+
+        &:hover{
+            background-color: $mainColor;
+            img{
+                
+                z-index: 0;
+            }
+            .kekkeiGenkaiName{
+                visibility: visible;
+            }
         }
     }
 }

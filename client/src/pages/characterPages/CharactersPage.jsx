@@ -32,6 +32,7 @@ const CharactersPage = () => {
                    
                         <Link Link to={`/character/${character.id}`}><div className="characterName">{character.name}</div></Link> 
                         <div className="characterImage"><img src={character.images[0]} alt="React Image" /></div>
+                        
 
                     
                 </div>
