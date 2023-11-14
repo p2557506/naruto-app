@@ -12,6 +12,7 @@ import Villages from './pages/villages/Villages';
 import DedicatedCharacter from './pages/dedicatedCharacterPages/DedicatedCharacter';
 import CharactersPage from './pages/characterPages/CharactersPage';
 import KekkeiGenkai from './pages/kekkeiGenkaiPage/KekkeiGenkai';
+import WatchingGuide from './pages/watchingGuide/WatchingGuide';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element = {<Home/>}/>
+            <Route path="/watchingGuide" element = {<WatchingGuide/>}/>
             <Route path="/characterDex" element = {<CharacterDex/>}/>
             <Route path="/characters" element = {<CharactersPage/>}/>
             <Route path="/villages" element = {<Villages/>}/>

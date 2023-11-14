@@ -24,7 +24,10 @@
         gap: 1rem;
         font-family: narutoFont;
         li{
-            
+            a{
+                text-decoration: none;
+                color: black;
+            }
         }
     }
 }

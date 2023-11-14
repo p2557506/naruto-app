@@ -46,7 +46,7 @@ const Villages = () => {
             {villages.map(village=>(
                 <div className="villageItem" key={village.id}>
                    
-                    <div className="villageName">{village.name}</div> 
+                    <div className="villageName"><Link to={"/characters"}>{village.name}</Link></div> 
                     {(() => {
                             switch (village.id) {
                             case 0:

@@ -4,6 +4,8 @@ import axios from 'axios';
 import Navbar from '../../navbar/Navbar';
 import "./charactersPage.scss";
 import { Link } from 'react-router-dom';
+
+
 const CharactersPage = () => {
 
     const [characters,setCharacters] = useState([]);
@@ -21,6 +23,8 @@ const CharactersPage = () => {
         fetchAllCharacters();
     },[])
 
+    //Info 
+    //Jutsu, Clan, Powers , Rank
   return (
     <div>
         <div><Navbar/></div>
@@ -28,10 +32,13 @@ const CharactersPage = () => {
         <div className="charactersWrapper">
 
             {characters.map(character=>(
-                <div className="charactersItemBox" key={character.id}>
+                <div className="characterItemBox" key={character.id}>
+
+                    
+                        <h3 className="characterName">{character.name} </h3>
                    
-                        <Link Link to={`/character/${character.id}`}><div className="characterName">{character.name}</div></Link> 
-                        <div className="characterImage"><img src={character.images[0]} alt="React Image" /></div>
+                        <Link to ={`/character/${character.id}`}><img src={character.images[0]} alt="" /></Link>
+                        
                         
 
                     

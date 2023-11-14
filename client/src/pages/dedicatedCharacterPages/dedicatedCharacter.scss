@@ -1,0 +1,71 @@
+.characterPage{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 1rem;
+    gap: 3rem;
+
+
+.characterProfile{
+    flex: 1;
+    height: 70%;
+
+    img{
+        border-radius: 1rem;
+    }
+}
+img{
+    
+}
+.dedicatedCharacterContainer{
+    
+    .abilities{
+        display: flex;
+        gap: 1rem;
+
+    }
+    
+    
+    
+
+    .signatureJutsu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .jutsu{
+            display: flex;
+            flex-direction: column;
+        }
+        img{
+            width: 253px;
+            height: 150px;
+            border-radius: 1rem;
+        }
+    }
+
+    .kekkeiGenkai{
+        display: flex;
+        align-items: center;
+        
+        flex-direction: column;
+
+        .kekkeiGenkaiName{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}
+.characterBriefBio{
+    h3{
+        
+    }
+    p{
+       padding: 1rem;
+       
+       -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+       box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+       width: 50%;
+    }
+}
+}
