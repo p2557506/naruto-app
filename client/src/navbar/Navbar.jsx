@@ -5,7 +5,7 @@ import "./navbar.scss";
 const Navbar = () => {
   return (
     <div className="navbarContainer">
-        <div className="logo">NarutoWorld</div>
+        <h1 className="logo">NarutoWorld</h1>
         <ul className="links">
             <li><Link to={"/"}>Home</Link></li>
             <li><Link to={"/watchingGuide"}>Watching Guide</Link></li>
