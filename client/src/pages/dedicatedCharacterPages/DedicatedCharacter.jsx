@@ -9,13 +9,19 @@ import "./dedicatedCharacter.scss"
 //Kekkei
 import mangekyoImage from "../../kekkeiGenkaiImages/mangekyoSharingan.png"
 import eternalMangekyo from "../../kekkeiGenkaiImages/madaraEternalSharingan.png"
-import kakashiSharingan from "../../kekkeiGenkaiImages/okSharingan.png"
+import okSharingan from "../../kekkeiGenkaiImages/okSharingan.png"
+import woodRelease from "../../kekkeiGenkaiImages/woodRelease.png"
+import sharingan from "../../kekkeiGenkaiImages/sharingan.png"
 
 //Jutsu
 import tsukuyomi from "../../jutsuImages/Tsukuyomi.webp"
 import susanoo from "../../jutsuImages/madara-madara-susanoo.gif"
 import shadowClone from "../../jutsuImages/shadowClone.gif"
 import chidori from "../../jutsuImages/chidori.gif"
+import thousand from "../../jutsuImages/thousandHands.gif"
+import kamui from "../../jutsuImages/kamui.gif"
+import rasengan from "../../jutsuImages/rasengan.gif"
+import fireball from "../../jutsuImages/fireball.gif"
 
 const DedicatedCharacter = () => {
 
@@ -88,12 +94,36 @@ const DedicatedCharacter = () => {
                                     <img src={chidori} alt="" />
                                     
                                 </div>
+                        case 865:
+                            return <div className="jutsu">
+                                    {signatureJutsu[16]}
+                                    <img src={rasengan} alt="" />
+                                    
+                                </div>
                         case 1293:
                             return <div className="jutsu">
                                     {signatureJutsu[20]}
                                     <img src="" alt="" />
                                     
                                 </div>
+                        case 1063:
+                            return <div className="jutsu">
+                                    {signatureJutsu[6]}
+                                    <img src={thousand} alt="" />
+                                    
+                                </div>
+                        case 1303:
+                            return <div className="jutsu">
+                                    {signatureJutsu[16]}
+                                    <img src={kamui} alt="" />
+                                    
+                                </div>
+                            case 1307:
+                                return <div className="jutsu">
+                                        {signatureJutsu[29]}
+                                        <img src={fireball} alt="" />
+                                        
+                                    </div>
                             case 1299:
                                 return <div className="jutsu">
                                     {signatureJutsu[39]}
@@ -120,16 +150,22 @@ const DedicatedCharacter = () => {
                 {(() => {
                     switch (id) {
                         case 376:
-                            return <img src={kakashiSharingan} alt="" /> ;
+                            return <img src={okSharingan} alt="" /> ;
+                        
+                        case 1063:
+                            return <img src={woodRelease} alt="" /> ;
                         case 1293:
                             return <img src={mangekyoImage} alt="" /> ;
+                        case 1303:
+                            return <img src={okSharingan} alt="" /> ;
+                        case 1307:
+                        return <img src={sharingan} alt="" /> ;
                         case 1299:
                             return <img src={eternalMangekyo} alt="" /> ;
-                        case 1344:
-                            return "N/A" ;
+                        
                             default:
                                 
-                                return null;
+                                return "N/A";
                             }
                         })()}
             </div>
@@ -144,6 +180,23 @@ const DedicatedCharacter = () => {
                             case 376:
                                 return <p>
                                 Kakashi graduated from the Ninja Academy and became a Genin, when he was merely 5 years old, then at 6 years old, became a Chuunin. He later became a Jounin and a member of the AnBu Assasination squad for Hidden Leaf Village. We see him as he takes up the role as being a sensei for the new Chunnins.
+                                </p> ;
+                            case 865:
+                                return <p>
+                                Minato Namikaze (波風ミナト, Namikaze Minato) was the Fourth Hokage of Konohagakure, although he was Lord Fourth, he also had the shortest reign of Hokage. He was famous in life for his speed, leading to the moniker of Yellow Flash of the Leaf (木ノ葉の黄色い閃光, Konoha no Kiiroi Senkō).
+                                </p> ;
+                            case 1063:
+                                return <p>
+                                Hashirama Senju was a member of the famous Senju clan and he was one of the founders and also the First Hokage of the Leaf Village.
+                                Hashirama sought peace for the shinobi world. To achieve that end founded Konoha with his clan, his childhood friend and rival Madara Uchiha, and the Uchiha clan.
+                                </p> ;
+                            case 1303:
+                                return <p>
+                                Obito Uchiha (うちはオビト, Uchiha Obito) was a member of Konohagakure's Uchiha clan. He was believed to have died during the Third Shinobi World War, his only surviving legacy being the Sharingan he gave to his teammate, Kakashi Hatake.
+                                </p> ;
+                            case 1307:
+                                return <p>
+                                Sasuke Uchiha (うちはサスケ, Uchiha Sasuke) is one of the last surviving members of Konohagakure's Uchiha clan. After his older brother, Itachi, slaughtered their clan, Sasuke made it his mission in life to avenge them by killing Itachi. He is added to Team 7 upon becoming a ninja 
                                 </p> ;
                             case 1293:
                                 return <p>
